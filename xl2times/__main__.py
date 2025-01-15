@@ -468,8 +468,7 @@ def run(args: argparse.Namespace) -> str | None:
         "veda-tags.json",
         "veda-attr-defaults.json",
         args.regions,
-        True,
-        # args.include_dummy_imports,
+        args.include_dummy_imports,
     )
 
     model = TimesModel()

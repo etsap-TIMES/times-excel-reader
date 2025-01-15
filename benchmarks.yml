@@ -13,21 +13,21 @@ benchmarks:
     dd_files:
       - "base"
       - "syssettings"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_002-all
     input_folder: DemoS_002
     dd_folder: DemoS_002-all
     dd_files:
       - "base"
       - "syssettings"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_003-all
     input_folder: DemoS_003
     dd_folder: DemoS_003-all
     dd_files:
       - "base"
       - "syssettings"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_004
     input_folder: DemoS_004
     inputs:
@@ -39,7 +39,7 @@ benchmarks:
     dd_files:
       - "base"
       - "syssettings"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_004a
     input_folder: DemoS_004
     inputs:
@@ -53,7 +53,7 @@ benchmarks:
       - "base"
       - "syssettings"
       - "peak_rsv"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_004b
     input_folder: DemoS_004
     inputs:
@@ -67,7 +67,7 @@ benchmarks:
       - "base"
       - "syssettings"
       - "peak_rsv-flx"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_004-all
     input_folder: DemoS_004
     dd_folder: DemoS_004-all
@@ -76,7 +76,7 @@ benchmarks:
       - "syssettings"
       - "peak_rsv"
       - "peak_rsv-flx"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_005-all
     input_folder: DemoS_005
     dd_folder: DemoS_005-all
@@ -88,7 +88,7 @@ benchmarks:
       - "elc_co2_bound"
       - "peak_rsv"
       - "uc_co2bnd"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_006-all
     input_folder: DemoS_006
     dd_folder: DemoS_006-all
@@ -100,7 +100,7 @@ benchmarks:
       - "elc_co2_bound"
       - "peak_rsv"
       - "uc_co2bnd"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_007-all
     input_folder: DemoS_007
     dd_folder: DemoS_007-all
@@ -117,7 +117,7 @@ benchmarks:
       - "tra_co2_bound"
       - "uc_co2bnd"
       - "uc_growth"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_007-all-1r
     input_folder: DemoS_007
     inputs:
@@ -151,7 +151,7 @@ benchmarks:
       - "tra_co2_bound"
       - "uc_co2bnd"
       - "uc_growth"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_008-all
     input_folder: DemoS_008
     dd_folder: DemoS_008-all
@@ -169,7 +169,7 @@ benchmarks:
       - "uc_co2bnd"
       - "uc_growth"
       - "uc_nuc_maxcap"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_009-all
     input_folder: DemoS_009
     dd_folder: DemoS_009-all
@@ -191,7 +191,7 @@ benchmarks:
       - "uc_dh_minprod"
       - "uc_growth"
       - "uc_nuc_maxcap"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_010-all
     input_folder: DemoS_010
     dd_folder: DemoS_010-all
@@ -214,7 +214,7 @@ benchmarks:
       - "uc_dh_minprod"
       - "uc_growth"
       - "uc_nuc_maxcap"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_011-all
     input_folder: DemoS_011
     dd_folder: DemoS_011-all
@@ -238,7 +238,7 @@ benchmarks:
       - "uc_dh_minprod"
       - "uc_growth"
       - "uc_nuc_maxcap"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: DemoS_012-all
     input_folder: DemoS_012
     dd_folder: DemoS_012-all
@@ -268,7 +268,7 @@ benchmarks:
       - "uc_dh_minprod"
       - "uc_growth"
       - "uc_nuc_maxcap"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: Ireland
     input_folder: Ireland
     regions: "IE"
@@ -364,7 +364,7 @@ benchmarks:
       - "b_tra_emissions"
       - "b_tra_ev_parity"
       - "b_tra_f_modalshares"
-    iclude_dummy_imports: true
+    include_dummy_imports: true
   - name: TIMES-NZ-KEA
     input_folder: TIMES-NZ
     inputs:
