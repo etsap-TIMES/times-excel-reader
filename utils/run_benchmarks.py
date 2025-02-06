@@ -38,6 +38,16 @@ def parse_result(output: str) -> tuple[float, int, int]:
     return (float(m[0]), int(m[1]), int(m[3]))
 
 
+def _check_file_exists_and_retry(file_path, retries=60):
+    for _ in range(retries):
+        logger.info("Checking diffile exists")
+        if path.exists(file_path):
+            logger.info("Found diffile")
+            return True
+        time.sleep(5)
+    return False
+
+
 def run_gams_gdxdiff(
     benchmark: Any,
     times_folder: str,
@@ -128,9 +138,16 @@ def run_gams_gdxdiff(
         logger.info(res.stdout)
         logger.info(res.stderr if res.stderr is not None else "")
     if res.returncode != 0:
+        diffile = path.join(out_folder, "diffile.gdx")
+        if not _check_file_exists_and_retry(diffile):
+            logger.info(res.stdout)
+            logger.info(res.stderr if res.stderr is not None else "")
+            logger.error(
+                f"GAMS gdxdiff failed on {benchmark['name']}: diffile.gdx not found"
+            )
         # Report the number of lines in the gdxdump of the difffile
         res = subprocess.run(
-            ["gdxdump", path.join(out_folder, "diffile.gdx")],
+            ["gdxdump", diffile],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
